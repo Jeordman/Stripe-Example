@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div style={{display:'flex',flexDirection:'column', alignItems:'center', marginTop:'50px'}}>
         <StripeCheckout
-          name='CLass' //header
+          name='Jeordin Test' //header
           image={imageUrl}
           description='This is stuff going beneath the header' //subtitle - beneath header
           stripeKey={process.env.REACT_APP_STRIPE_KEY} //public key not secret key
@@ -46,7 +46,7 @@ class App extends Component {
           currency="USD" 
           // image={imageUrl} // the pop-in header image (default none)
           // ComponentClass="div" //initial default button styling on block scope (defaults to span)
-          panelLabel="Submit Payment" //text on the submit button
+          panelLabel="Send dat Cash" //text on the submit button
           locale="en" //locale or language (e.g. en=english, fr=french, zh=chinese)
           opened={this.onOpened} //fires cb when stripe is opened
           closed={this.onClosed} //fires cb when stripe is closed
